@@ -1,4 +1,7 @@
-This renders [Avataaars](https://github.com/fangpenlin/avataaars) in a way that can be embedded!
+This renders [soulteary/avataaars](https://github.com/soulteary/avataaars) in a way that can be embedded!
+
+A simplified version that simplifies complex front-end dependencies and upgrades the Node runtime version and React version to a newer version. Original Repo: [gkoberger/avataaars](https://github.com/gkoberger/avataaars), [Avataaars](https://github.com/fangpenlin/avataaars)
+
 
 Here's some example URLs:
 
@@ -23,7 +26,7 @@ DEVELOPMENT
 ===========
 
 ```
-   $ git clone git@github.com:gkoberger/avataaars.git
+   $ git clone https://github.com/soulteary/avataaars-node-server.git
    $ cd avataaars
    $ npm install
    $ npm start
