@@ -2,6 +2,13 @@ This renders [soulteary/avataaars](https://github.com/soulteary/avataaars) in a 
 
 A simplified version that simplifies complex front-end dependencies and upgrades the Node runtime version and React version to a newer version. Original Repo: [gkoberger/avataaars](https://github.com/gkoberger/avataaars), [Avataaars](https://github.com/fangpenlin/avataaars)
 
+## Docker
+
+```bash
+docker run -d -p 8124:3000 soulteary/avataaars-generator-node:2021.0804.0033
+```
+
+## Example
 
 Here's some example URLs:
 
