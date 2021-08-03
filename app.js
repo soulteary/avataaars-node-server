@@ -4,6 +4,8 @@ const React = require('react');
 const RDS = require('react-dom/server');
 const Avataaars = require('@bugfix/avataaars').default;
 
+const TRANSPARENT_GIF_BUFFER = Buffer.from('R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=', 'base64');
+
 const app = express();
 
 app.set('view engine', 'html');
@@ -12,6 +14,11 @@ function getSVG(req) {
   const avatarDom = React.createElement(Avataaars, { ...req.query })
   return RDS.renderToStaticMarkup(avatarDom);
 }
+
+app.get('/favicon.ico', (req, res) => {
+  res.writeHead(200, { 'Content-Type': 'image/gif' });
+  res.end(TRANSPARENT_GIF_BUFFER, 'binary');
+})
 
 app.get('/', async (req, res) => {
   if (req.query.facialHairType === 'BeardMagestic') {
